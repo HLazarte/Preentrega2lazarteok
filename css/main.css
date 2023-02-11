@@ -1,0 +1,179 @@
+/* reset */
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+
+/* estilos genericos*/
+
+body {
+    background-color: rgb(94, 117, 117);
+}
+
+/*estilo de home*/
+
+header {
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;}
+   
+
+header nav ul li a {
+    list-style: none;
+    gap: 1.3rem;
+    color: whitesmoke;
+    font-weight: bold;
+
+}
+
+
+/* estilos de main home*/
+
+main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.contenedor{
+    height: 70vh;
+    margin: 3rem;
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 5% 40%;
+}
+
+.imagen-inicio{
+    display: none;
+}
+
+
+/* mq de tablet*/
+
+@media screen and (min-width:600px) {}
+
+
+
+
+/* mq de desktop */
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: rgb(221, 118, 22);
+    }
+
+    header nav ul {
+        list-style: none;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        margin: 15px;
+    }
+
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40% 60%;
+    }
+    .imagen-inicio{
+        display: block;
+    }
+
+    .imagen-home, .imagen-inicio{
+        grid-row: span 1;
+    }
+    .imagen-aromas{
+       grid-column: span 2;
+      
+    }
+
+ 
+       
+    .imagen-inicio:hover {
+    transform: scale(0.8);
+    opacity: 70%;
+    transition: 3s;
+
+    }
+    .imagen-aromas:hover {
+        transform: scale(0.8);
+        opacity: 70%;
+        transition: 3s;
+    
+        }
+    .imagen-home:hover {
+            transform: scale(0.8);
+            opacity: 70%;
+            transition: 3s;
+        
+    }
+
+    
+}
+
+
+
+
+
+/* estilos de main class*/
+
+
+/* contacto*/
+
+main form {
+    background-color: burlywood;
+    margin: 1rem;
+    padding: 20px;
+}
+
+.carousel-item{
+    width: 95%;
+}
+
+.carousel-inner{
+    margin: 25px;
+}
+
+
+.titulo {
+    color: rgb(239, 239, 247);
+}
+
+.imagenesproducto {
+    display: inline-block;
+    padding: 10px;
+}
+
+.imagenwap {
+    width: 5%;
+}
+
+.impact {
+    font-family: sans-serif;
+}
+
+.italica {
+    font-style: italic;
+}
+
+.comicsans {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* estilos de footer*/
+
+footer {
+    background-color: rgb(190, 190, 243);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.tamañoimagenfooter {
+    width: 5%;
+}
