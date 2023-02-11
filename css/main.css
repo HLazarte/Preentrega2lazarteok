@@ -169,9 +169,10 @@ main form {
 /* estilos de footer*/
 
 footer {
-    background-color: rgb(190, 190, 243);
+    background-color: black;
     text-align: center;
     margin-top: 40px;
+    color: rgb(239, 239, 247)
 }
 
 .tamañoimagenfooter {
