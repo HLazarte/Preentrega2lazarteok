@@ -53,6 +53,14 @@ main div img {
     display: none;
 }
 
+.carousel-item{
+    width: 95%;
+}
+
+.carousel-inner{
+    margin: 10px;
+}
+
 
 /* mq de tablet*/
 
@@ -114,6 +122,11 @@ main div img {
         
     }
 
+    .carousel-inner{
+        margin: 25px;
+    }
+    
+
     
 }
 
@@ -132,13 +145,6 @@ main form {
     padding: 20px;
 }
 
-.carousel-item{
-    width: 95%;
-}
-
-.carousel-inner{
-    margin: 25px;
-}
 
 
 .titulo {
